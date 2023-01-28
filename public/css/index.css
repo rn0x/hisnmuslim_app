@@ -58,7 +58,7 @@ body {
 }
 
 #closed:hover {
-  background-color: #d10a0a;
+  background-color: #ee4545;
   transition: 0.3s ease-in-out;
 }
 
