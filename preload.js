@@ -1,5 +1,5 @@
 /* PACKAGES */
-const { ipcRenderer } = require("electron");
+const { ipcRenderer, shell } = require("electron");
 const fs = require("fs-extra");
 const path = require("path");
 
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", async (event) => {
   document.getElementById("closed").addEventListener("click", (e) => ipcRenderer.send("closed"));
   document.getElementById("minimizable").addEventListener("click", (e) => ipcRenderer.send("minimizable"));
   document.getElementById("minimize").addEventListener("click", (e) => ipcRenderer.send("minimize"));
-  
+
   /* MODULES LOAD */
   await version(appPath, fs, path);
 
@@ -32,15 +32,15 @@ window.addEventListener("DOMContentLoaded", async (event) => {
 
   switch (pageFile) {
     case "home.html":
-      await home(appPath, fs, path);
+      home(fs, path);
       break;
 
     case "list.html":
-      await list(appPath, fs, path);
+      list(fs, path);
       break;
 
     case "info.html":
-      await info(appPath, fs, path);
+      info(shell);
       break;
 
     default:

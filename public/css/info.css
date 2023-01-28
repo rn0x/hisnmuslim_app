@@ -19,3 +19,93 @@
     padding: 20px;
     color: #6e1f09;
 }
+
+#author_title {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#author {
+    width: 80%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+#author_img {
+    max-width: 20%;
+    border-radius: 50%;
+}
+
+#author_text {
+    margin-right: 10px;
+    font-size: 13px;
+    color: #a74023;
+}
+
+
+#space {
+    width: 50%;
+    border-bottom: 1px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#Developer_title {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#Developer {
+    width: 30%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#Developer_img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+#Developer_div {
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.icon_Developer {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#Copyright {
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}

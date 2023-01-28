@@ -1,6 +1,6 @@
 const CopyElement = require('../modules/CopyElement.js');
 
-module.exports = async (appPath, fs, path) => {
+module.exports = (fs, path) => {
 
     let hisnmuslim = fs.readJsonSync(path.join(__dirname, '../public/json/hisnmuslim.json'));
     let alrt = document.getElementById('alrt');

@@ -17,11 +17,13 @@ const createWindow = async () => {
   var mainWindow = new BrowserWindow({
     width: 980,
     height: 600,
+    minWidth: 980,
+    minHeight:600,
     center: true,
     show: false,
     frame: false,
     title: "Hisnmuslim - حصن المسلم",
-    //icon: path.join(__dirname, '../build/icons/icon.png'),
+    icon: path.join(__dirname, 'build/icon.png'),
     webPreferences: {
       nodeIntegration: true,
       sandbox: false,
@@ -30,11 +32,11 @@ const createWindow = async () => {
   });
 
 
-  mainWindow.loadFile(path.join(__dirname, "pages/list.html"));
+  mainWindow.loadFile(path.join(__dirname, "pages/home.html"));
 
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 
-  //mainWindow.removeMenu();
+  mainWindow.removeMenu();
 
   mainWindow.once("ready-to-show", () => {
     mainWindow?.show();
