@@ -70,9 +70,9 @@ module.exports = async (appPath, fs, path) => {
         let category_ = document.getElementById(iterator.id);
         let id = iterator?.id.split('category_id_')[1];
 
-        category_.onclick = async e => {
+        category_.onclick = e => {
 
-            e.preventDefault();
+            window.scrollTo(0, 0);
             table.style.display = 'none';
             category_content.style.display = 'block'
             title_index.innerText = hisnmuslim[id - 1].category
