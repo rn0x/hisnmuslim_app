@@ -8,6 +8,7 @@ module.exports = async (appPath, fs, path) => {
     let title_index = document.getElementById('title_index');
     let category_content = document.getElementById('category_content');
     let alrt = document.getElementById('alrt');
+    let Search = document.getElementById('Search');
 
     category_content.style.display = 'none'
 
@@ -74,6 +75,7 @@ module.exports = async (appPath, fs, path) => {
 
             window.scrollTo(0, 0);
             table.style.display = 'none';
+            Search.style.display = 'none';
             category_content.style.display = 'block'
             title_index.innerText = hisnmuslim[id - 1].category
             let back_el = document.createElement("button");
@@ -150,6 +152,23 @@ module.exports = async (appPath, fs, path) => {
 
         }
 
+    }
+
+    Search.onkeyup = () => {
+        let filter = Search.value.toUpperCase();
+        let tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+            let td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                let txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
     }
 
 };

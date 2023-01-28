@@ -20,6 +20,17 @@
     color: #6e1f09;
 }
 
+#Search {
+    background-image: url(../icon/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
 /* TABLE */
 
 #table {
