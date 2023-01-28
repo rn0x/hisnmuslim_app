@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Al_Jazeera";
+  src: url(../font/Al-Jazeera-Arabic-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Greta_Arabic";
+  src: url(../font/Greta_Arabic_Regular.ttf) format("truetype");
+}
+
+html,
+body {
+  background-color: #fafafa;
+  margin: 0px 0px 0px 0px;
+  max-height: 100%;
+  -webkit-user-select: none;
+}
+
+#titlebar {
+  height: 30px;
+  width: 100%;
+  -webkit-app-region: drag;
+  direction: ltr;
+}
+
+#window-controls {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  /* justify-content: space-between; */
+  /* background-color: #383058; */
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  -webkit-app-region: drag;
+  cursor: pointer;
+}
+
+#controls {
+  display: flex;
+}
+
+.icon_bar {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  -webkit-app-region: no-drag;
+}
+
+.top_bar_icon {
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  -webkit-user-select: none;
+}
+
+#closed:hover {
+  background-color: #d10a0a;
+  transition: 0.3s ease-in-out;
+}
+
+#minimizable:hover,
+#minimize:hover,
+.top_bar:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s ease-in-out;
+}
+
+.top_bar {
+  margin-left: 5px;
+}
+
+/* .Content {
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
+.menu {
+  background-color: #f8f8f9;
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  border-left: 0.5px solid #e1e3e6;
+}
+
+#app_logo{
+  display: block;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-app-region: drag;
+
+}
+
+.menu_ul {
+  margin-top: 15px;
+  width: 100%;
+  direction: rtl;
+  list-style: none;
+  text-align: center;
+  font-family: 'Al_Jazeera', 'Greta_Arabic';
+  color: #6e1f09;
+}
+
+.menu_ul li {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+  font-size: 14px;
+  padding: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 0.5px solid #e1e3e6;
+  transition: 0.5s ease-in-out;
+}
+
+.menu_ul li p {
+  margin: 0 0 0 0;
+}
+
+.menu_ul li:hover {
+  width: 95%;
+  margin-right: 5px;
+  background-color: #f1f1f1;
+  border: 0.5px solid #d9dbdd;
+  transition: 0.5s ease-in-out;
+}
+
+.menu_ul li:hover>.menu_left {
+  background-image: url(../icon/left.png);
+  background-size: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.menu_right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+.menu_icon {
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+#menu_bottom {
+  justify-content: center;
+  width: 70%;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #2b294a00;
+  margin-bottom: 15px;
+  cursor:auto;
+  border: none;
+}
+
+#menu_bottom:hover{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#version {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.main {
+  direction: rtl;
+  padding-right: 180px;
+}
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  -webkit-app-region: no-drag;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #f8f8f9;
+  -webkit-app-region: no-drag;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e7e9eb;
+  -webkit-app-region: no-drag;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bebebe;
+}

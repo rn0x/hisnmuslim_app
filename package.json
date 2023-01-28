@@ -1,0 +1,92 @@
+{
+  "name": "hisnmuslim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "packwin": "electron-builder --windows",
+    "packlinux": "electron-builder --linux",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dev": "nodemon --exec electron index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "node-fetch": "^3.3.0",
+    "v8-compile-cache": "^2.3.0"
+  },
+  "devDependencies": {
+    "electron": "^22.1.0",
+    "electron-builder": "^23.6.0",
+    "nodemon": "^2.0.20"
+  },
+  "build": {
+    "directories": {
+      "buildResources": "resources"
+    },
+    "productName": "Hisnmuslim",
+    "publish": {
+      "provider": "github",
+      "owner": "rn0x",
+      "repo": "Hisnmuslim",
+      "protocol": "https"
+    },
+    "appId": "org.rn0x.hisnmuslim",
+    "copyright": "Copyright © 2023 Hisnmuslim",
+    "win": {
+      "icon": "build/icon.ico",
+      "signingHashAlgorithms": [
+        "sha256",
+        "sha1"
+      ],
+      "signAndEditExecutable": true,
+      "publisherName": "Ryan Almalki",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "portable"
+        },
+        {
+          "target": "msi"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": "false",
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": "true",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "license": "build/LICENSE.txt",
+      "shortcutName": "حصن المسلم",
+      "uninstallDisplayName": "حصن المسلم",
+      "installerSidebar": "build/installerSidebar.bmp",
+      "uninstallerSidebar": "build/installerSidebar.bmp",
+      "installerHeader": "build/installerHeader.bmp"
+    },
+    "linux": {
+      "category": "Education",
+      "icon": "build/icons/icon.icns",
+      "vendor": "Ryan Almalki",
+      "description": "Hisnmuslim - Islamic Desktop Application",
+      "synopsis": "Islamic Desktop Application",
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "snap",
+        "flatpak"
+      ]
+    }
+  }
+}

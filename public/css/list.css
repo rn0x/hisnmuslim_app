@@ -1,0 +1,224 @@
+#menu_list {
+    width: 95%;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+    border: 0.5px solid #d9dbdd;
+}
+
+#menu_list>.menu_left {
+    background-image: url(../icon/left.png);
+    background-size: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+#list_page {
+    text-align: center;
+    font-family: 'Al_Jazeera';
+    font-size: 13px;
+    padding: 20px;
+    color: #6e1f09;
+}
+
+/* TABLE */
+
+#table {
+    display: table;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+    background-color: #f8f8f9;
+    border-radius: 10px;
+    border: 0;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#table th,
+#table td {
+    padding: 10px;
+    border: 0;
+    text-align: center;
+    color: #6e1f09;
+}
+
+#table th {
+    color: #6e1f09;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-bottom: 0.5px solid #d0d3d6;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+#table tr:last-child #table td:first-child {
+    border-bottom-right-radius: 10px;
+}
+
+#table tr:last-child #table td:last-child {
+    border-bottom-left-radius: 10px;
+}
+
+#table th:last-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+}
+
+#table th:first-child {
+    border-right-style: solid;
+    border-top-right-radius: 10px;
+}
+
+
+#title_index {
+    color: #6e1f09;
+}
+
+
+.category {
+    margin: 0 0 0 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}
+
+.category:hover {
+    font-size: 18px;
+    color: #882a11;
+    transition: 0.4s ease-in-out;
+}
+
+.audio {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    color: #6e1f09;
+    font-family: 'Al_Jazeera';
+    font-size: 11px;
+    text-align: center;
+    border: 0.5px solid #d0d3d6;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+
+.audio:hover {
+    background-color: #f3f3f3;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+/* category | content */
+
+#category_content {
+    display: block;
+    list-style: none;
+    align-items: center;
+}
+
+#back {
+    border: 0.5px solid #d0d3d6;
+    background-color: #f8f8f9;
+    padding: 7px;
+    width: 90px;
+    color: #6e1f09;
+    font-family: 'Al_Jazeera';
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    transition: 0.5s ease-in-out;
+
+}
+
+#back:hover {
+    width: 120px;
+    transition: 0.5s ease-in-out;
+}
+
+.category_content_li {
+    background-color: #f8f8f9;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 0.5px solid #d0d3d6;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.category_bottom {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7px;
+    border: 0.5px solid #d0d3d6;
+    border-radius: 5px;
+}
+
+.copy {
+    cursor: pointer;
+}
+
+.copy:hover {
+    color: #a74023;
+}
+
+.category_audio {
+    border: 0.5px solid #d0d3d6;
+    border-radius: 50px;
+}
+
+.category_text {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    -webkit-user-select:text;
+}
+
+
+/* alrt */
+
+#alrt {
+    display: none;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+}
+
+#alrt_text {
+    margin-left: 180px;
+    margin-top: 220px;
+}
+
+#alrt_p {
+    width: 50%;
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 0.5px solid #d0d3d6;
+    font-family: 'Al_Jazeera';
+    font-size: 13px;
+    color: #6e1f09;
+}
