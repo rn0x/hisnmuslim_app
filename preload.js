@@ -16,6 +16,7 @@ const version = require("./modules/version.js");
 window.addEventListener("DOMContentLoaded", async (event) => {
   event.preventDefault();
 
+  document.documentElement.style.setProperty('--animate-duration', '2.0s');
   const appPath = await ipcRenderer.invoke("appPath");
 
   /* Window Controls */

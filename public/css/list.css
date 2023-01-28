@@ -190,6 +190,7 @@
     margin-right: 10px;
     font-size: 15px;
     -webkit-user-select: text;
+    user-select: text;
 }
 
 

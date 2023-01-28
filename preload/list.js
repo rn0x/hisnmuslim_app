@@ -97,7 +97,8 @@ module.exports = async (appPath, fs, path) => {
                 let category_bottom_number = document.createElement("span");
                 category_content.appendChild(category_content_li);
                 category_content_li.id = `category_content_li_id_${num_li++}`
-                category_content_li.className = 'category_content_li'
+                // category_content_li.className = 'category_content_li'
+                category_content_li.classList.add('animate__animated', 'animate__fadeIn', 'category_content_li'); 
                 category_content_li.appendChild(category_top);
                 category_content_li.appendChild(category_bottom);
                 category_top.className = 'category_top'
