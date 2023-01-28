@@ -189,7 +189,7 @@
     margin-left: 10px;
     margin-right: 10px;
     font-size: 15px;
-    -webkit-user-select:text;
+    -webkit-user-select: text;
 }
 
 
@@ -212,7 +212,7 @@
 
 #alrt_p {
     width: 50%;
-    padding: 8px;
+    padding: 15px;
     background-color: #f1f1f1;
     margin-left: auto;
     margin-right: auto;
