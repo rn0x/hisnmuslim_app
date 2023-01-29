@@ -84,9 +84,9 @@ npm run dev
 
 ```bash
 #Windows
-yarn run packwin
+npm run packwin
 #Linux
-yarn run packlinux
+npm run packlinux
 ```
 
 
