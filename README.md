@@ -35,12 +35,12 @@
 <br>
 
 <div align="center">
+
+<img src="/build/icon.png" width="100px;"/>  <br><br>
   
 <a href="https://snapcraft.io/hisnmuslim">
   <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
-</a>
-
-
+</a> <br><br>
 
 ```bash
 sudo snap install hisnmuslim
