@@ -114,6 +114,10 @@ npm run packlinux
 
 </table> <br> <br>
 
+# نبذه عن التطبيق من الأخ [صالح](https://github.com/SalehGNUTUX) 
+
+[![Gnu Tux](.github/44ZWKr-ZuJ0-def.jpg)](https://github.com/SalehGNUTUX)
+
 ### التطبيق صدقة عني وعن والدي والمؤمنين والمؤمنات جميعاً
 ### سبحانك اللهم وبحمدك أشهد أن لا إله إلا أنت أستغفرك وأتوب إليك
 
